@@ -1,0 +1,115 @@
+#zoom-default{
+  zoom: 90%;
+  }
+
+body {
+  font-family: "Poppins", sans-serif;
+  @mixin padding-reset-left() {
+    padding-left: 0;
+  }
+  @mixin padding-reset-right() {
+    padding-right: 0;
+  }
+  @mixin padding-reset-top() {
+    padding-top: 0;
+  }
+  @mixin padding-reset-bottom() {
+    padding-bottom: 0;
+  }
+  @mixin padding-reset() {
+    @include padding-reset-top;
+    @include padding-reset-right;
+    @include padding-reset-bottom;
+    @include padding-reset-left;
+  }
+  
+  $props: top right bottom left;
+  @each $prop in $props {
+    %padding-reset-#{$prop} {
+      padding-#{$prop}: 0;
+    }
+  }
+  %padding-reset {
+    padding: 0;
+  }
+  
+  @mixin margin-reset-left() {
+    margin-left: 0;
+  }
+  @mixin margin-reset-right() {
+    margin-right: 0;
+  }
+  @mixin margin-reset-top() {
+    margin-top: 0;
+  }
+  @mixin margin-reset-bottom() {
+    margin-bottom: 0;
+  }
+  @mixin margin-reset() {
+    @include margin-reset-top;
+    @include margin-reset-right;
+    @include margin-reset-bottom;
+    @include margin-reset-left;
+  }
+  
+  $props: top right bottom left;
+  @each $prop in $props {
+    %margin-reset-#{$prop} {
+      margin-#{$prop}: 0;
+    }
+  }
+  %margin-reset {
+    margin: 0;
+  }
+}
+
+.page-content {
+  margin-top: 100px;
+
+  .store-header{
+    margin: 20px 0;
+    background:url(../images/storeheadbg.png);
+    padding: 40px 0 40px 0;
+
+    .store-name{
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .store-provinces{
+      font-size: 15px;
+    }
+    .store-created{
+      font-size: 15px;
+    }
+
+
+    .store-img{
+      padding: 10px 10px;
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid #e4e4e4;
+  margin-top: 150px;
+
+  p {
+    color: #4d4d4d;
+    font-size: 15px;
+  }
+
+  a {
+    color: #4d4d4d;
+    font-size: 15px;
+  }
+
+  .copyright{
+    background-color: darken($color: #ffc107, $amount: 5);
+  }
+
+}
+
+.form-control {
+  background-color: #f3f3f3;
+}

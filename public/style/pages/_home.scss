@@ -1,0 +1,27 @@
+.page-home {
+  
+  .slick-prev:before {
+    content: "<i class="bi bi-arrow-left-circle"></i>";
+    color: #0c0d36;
+    font-size: 25px;
+  }
+  
+  .slick-next:before {
+    content: "<i class="bi bi-arrow-right-circle"></i>";
+    color: #0c0d36;
+    font-size: 25px;
+  }
+
+  h5 {
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  .store-trend-categories {
+    margin-top: 30px;
+  }
+
+  .store-new-product {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,40 @@
+.sort-font {
+  color: #0c0d36;
+  text-align: center;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+.component-categories {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 10px 5px 10px 10px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in-out;
+  min-height: 246px;
+
+  .slick-prev:before {
+    content: "<i class="bi bi-arrow-left-circle"></i>";
+    color: #0c0d36;
+    font-size: 25px;
+  }
+  
+  .slick-next:before {
+    content: "<i class="bi bi-arrow-right-circle"></i>";
+    color: #0c0d36;
+    font-size: 25px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+  }
+
+  .categories-text {
+    color: #0c0d36;
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 12px;
+  }
+}
